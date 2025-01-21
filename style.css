@@ -1,9 +1,10 @@
 /* General Reset */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Tangerine', serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 /* Header */
@@ -15,7 +16,7 @@ header {
 
 header nav ul {
     list-style: none;
-    padding: 0;
+    padding: 100;
     display: flex;
     justify-content: space-around;
 }
@@ -36,7 +37,8 @@ header nav ul li a:hover {
     text-align: center;
     background: #004080;
     color: #fff;
-    padding: 100px 20px;
+    padding: 50px 20px;
+    font-size: 1.5em
 }
 
 .hero-section .cta-button {
@@ -45,10 +47,11 @@ header nav ul li a:hover {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .hero-section .cta-button:hover {
-    background: #ccc;
+    background: #000000;
 }
 
 /* Projects Section */
@@ -96,6 +99,40 @@ header nav ul li a:hover {
 .project-card a:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease;
+}
+
+/* Team Section */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 50px 20px;
+    background: #fff;
+}
+
+.team-member {
+    text-align: center;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    max-width: 100%;
+    height: 200px;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+.team-member h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.team-member p {
+    color: #555;
 }
 
 /* Footer */
@@ -186,23 +223,45 @@ form button:hover {
     overflow: hidden;
     white-space: nowrap;
     background-color: #004080;
-    padding: 50px 15px;
+    padding: 8px 15px;
     position: relative;
     width: 100%; /* Adjust the width as per your design */
-  }
+}
   
-  .scrolling-text {
+.scrolling-text {
     display: inline-block;
     position: relative;
     animation: scroll-left 50s linear infinite;
-  }
+    font-size: 1.5em;
+    padding:   0.1em;
+}
   
-  @keyframes scroll-left {
+@keyframes scroll-left {
     0% {
-      transform: translateX(30%);
+        transform: translateX(30%);
     }
     100% {
-      transform: translateX(-100%);
+        transform: translateX(-100%);
     }
-  }
+}
+.social-media-icons {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.social-media-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-media-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-media-icons a:hover img {
+    transform: scale(1.2);
+}
+
   
